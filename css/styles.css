@@ -212,13 +212,6 @@ h3 { font-size: 1.35rem; font-weight: 600; }
   letter-spacing: 0.02em;
 }
 
-.brand-ar {
-  font-family: var(--font-arabic-ui);
-  font-size: 1.15rem;
-  color: var(--gold-400);
-  opacity: 0.85;
-}
-
 .nav-links { display: flex; align-items: center; gap: 34px; }
 
 .nav-links a:not(.btn) {
