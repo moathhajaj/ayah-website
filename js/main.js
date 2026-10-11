@@ -140,10 +140,17 @@
 
     function goTo(i) {
       active = (i + cards.length) % cards.length;
-      cards[active].scrollIntoView({
-        behavior: reduceMotion ? "auto" : "smooth",
-        inline: "center",
-        block: "nearest",
+      // Scroll only the gallery strip. scrollIntoView would also pull the
+      // whole page to the gallery when the auto-advance fires off-screen.
+      // Delta from live rects is sign-agnostic, so it works for RTL too.
+      // Animate only when the strip can actually be seen.
+      const gRect = gallery.getBoundingClientRect();
+      const offscreen = document.hidden || gRect.bottom < 0 || gRect.top > window.innerHeight;
+      const cRect = cards[active].getBoundingClientRect();
+      const delta = (cRect.left + cRect.width / 2) - (gRect.left + gRect.width / 2);
+      gallery.scrollTo({
+        left: gallery.scrollLeft + delta,
+        behavior: reduceMotion || offscreen ? "auto" : "smooth",
       });
       sync();
     }

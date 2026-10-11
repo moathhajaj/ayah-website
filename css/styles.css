@@ -755,7 +755,6 @@ h3 { font-size: 1.35rem; font-weight: 600; }
   display: flex;
   gap: 24px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   padding: 10px max(calc((100vw - var(--container)) / 2 + 24px), 24px) 26px;
   scrollbar-width: none;
 }
@@ -764,7 +763,6 @@ h3 { font-size: 1.35rem; font-weight: 600; }
 
 .g-card {
   flex: 0 0 min(420px, 82vw);
-  scroll-snap-align: center;
   text-align: center;
   padding: 58px 36px 44px;
   border-radius: 190px 190px 26px 26px;
