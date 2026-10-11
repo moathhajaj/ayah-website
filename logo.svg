@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ayah mark">
+  <!--
+    The unified Ayah logo: the Rub el Hizb (two overlapping squares, one
+    rotated 45°) with a solid centre dot. This file is the single source of
+    the mark; favicon.svg is this mark on the brand tile, and
+    apps/ayah-native/scripts/generate-app-assets.mjs rasterizes the same
+    geometry for the native app and the Android launcher icons.
+  -->
+  <g fill="none" stroke="#d0aa61" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="19" y="19" width="26" height="26"/>
+    <rect x="19" y="19" width="26" height="26" transform="rotate(45 32 32)"/>
+  </g>
+  <circle cx="32" cy="32" r="5.5" fill="#d0aa61"/>
+</svg>
