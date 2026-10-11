@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayah | A Verse of the Quran, Every Day</title>
+  <meta name="description" content="Ayah delivers one beautifully typeset verse of the Quran to your phone every morning, with translations, tafsir, and recitation. Read it in a minute. Carry it all day." />
+  <meta name="theme-color" content="#070d1a" />
+  <meta property="og:title" content="Ayah | A Verse of the Quran, Every Day" />
+  <meta property="og:description" content="One ayah a day. A heart at rest. Daily Quran verses with translation, tafsir, and recitation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ══════════════════════ NAVIGATION ══════════════════════ -->
+  <header class="site-nav" id="siteNav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Ayah home">
+        <img src="logo.svg" alt="" class="brand-mark">
+        <span class="brand-word">Ayah</span>
+        <span class="brand-ar" lang="ar" dir="rtl">آية</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#verses">Verses</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="ar/" class="lang-link" lang="ar" dir="rtl" hreflang="ar">العربية</a>
+        <a href="#download" class="btn btn-gold btn-sm nav-cta">Get the app</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ══════════════════════ HERO ══════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-sky" aria-hidden="true">
+        <div class="stars" id="starfield"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+        <div class="ornament orn-1" data-parallax="0.06"><img src="logo.svg" alt=""></div>
+        <div class="ornament orn-2" data-parallax="-0.05"><img src="logo.svg" alt=""></div>
+        <div class="ornament orn-3" data-parallax="0.04">﴾</div>
+        <div class="ornament orn-4" data-parallax="-0.04">﴿</div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="bismillah reveal" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <h1 class="reveal" style="--d:.08s">
+            One ayah a day.<br />
+            <span class="gold-text">A heart at rest.</span>
+          </h1>
+          <p class="hero-sub reveal" style="--d:.16s">
+            Ayah delivers one beautifully typeset verse of the Quran to your phone
+            every morning, with translation, tafsir, and recitation.
+            Read it in a minute. Carry it all day.
+          </p>
+
+          <div class="hero-badges reveal" style="--d:.24s">
+            <a class="store-badge" href="#download" aria-label="Download on the App Store">
+              <svg viewBox="0 0 384 512" class="store-icon" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/><!-- Apple logo path © Font Awesome Free, CC BY 4.0 --></svg>
+              <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-badge" href="#download" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 512 512" class="store-icon" aria-hidden="true"><path fill="currentColor" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 36.1v439.8c0 16.9 8.7 29.3 21.7 35.9l285.6-255.9L47 0zm380.9 217.1-58.2-33.4-65.7 72.3 65.7 72.3 58.9-33.8c26.5-15.2 26.5-62.3-.7-77.4zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+              <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+
+          <div class="hero-meta reveal" style="--d:.32s">
+            <span class="meta-stars" aria-hidden="true">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </span>
+            <span>4.9 rating&nbsp;·&nbsp;Free to download&nbsp;·&nbsp;No account needed</span>
+          </div>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="hero-phone reveal" style="--d:.2s">
+          <div class="phone" role="img" aria-label="The Ayah app showing today's verse, Surah Ar-Ra'd 13:28, on a phone">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="app-status" aria-hidden="true">
+                <span>05:12</span>
+                <span class="app-status-icons"><i data-lucide="signal"></i><i data-lucide="wifi"></i><i data-lucide="battery-full"></i></span>
+              </div>
+              <div class="app-header" aria-hidden="true">
+                <div>
+                  <span class="app-kicker">Thursday, 12 October</span>
+                  <span class="app-title">Today’s Ayah</span>
+                </div>
+                <span class="app-streak" data-tooltip="12-day streak"><img src="logo.svg" alt=""></span>
+              </div>
+
+              <div class="verse-card" aria-hidden="true">
+                <div class="verse-card-glow"></div>
+                <span class="verse-brace open">﴿</span>
+                <p class="verse-ar" lang="ar" dir="rtl">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</p>
+                <p class="verse-en">“Truly, in the remembrance of Allah do hearts find rest.”</p>
+                <span class="verse-ref">Surah Ar-Ra‘d · 13:28</span>
+                <span class="verse-brace close">﴾</span>
+              </div>
+
+              <div class="verse-actions" aria-hidden="true">
+                <span class="action-pill action-play"><i data-lucide="play"></i> Listen</span>
+                <span class="action-pill"><i data-lucide="bookmark"></i></span>
+                <span class="action-pill"><i data-lucide="share-2"></i></span>
+              </div>
+
+              <div class="app-note" aria-hidden="true">
+                <i data-lucide="feather"></i>
+                <span>Write a reflection…</span>
+              </div>
+
+              <div class="app-tabbar" aria-hidden="true">
+                <span class="tab active"><i data-lucide="sunrise"></i>Today</span>
+                <span class="tab"><i data-lucide="book-open"></i>Quran</span>
+                <span class="tab"><i data-lucide="notebook-pen"></i>Reflections</span>
+              </div>
+            </div>
+          </div>
+          <div class="phone-shadow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <a href="#verses" class="scroll-hint" aria-label="Scroll to explore">
+        <i data-lucide="chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ══════════════════════ STATS STRIP ══════════════════════ -->
+    <section class="stats" aria-label="Ayah in numbers">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-num" data-count="6236">0</span>
+          <span class="stat-label">verses. One arrives<br />each new day</span>
+        </div>
+        <div class="stat reveal" style="--d:.08s">
+          <span class="stat-num" data-count="40" data-suffix="+">0</span>
+          <span class="stat-label">trusted translations,<br />Arabic tafsir included</span>
+        </div>
+        <div class="stat reveal" style="--d:.16s">
+          <span class="stat-num" data-count="60" data-suffix="+">0</span>
+          <span class="stat-label">recitations by the<br />world’s best qaris</span>
+        </div>
+        <div class="stat reveal" style="--d:.24s">
+          <span class="stat-num" data-count="60" data-suffix="s">0</span>
+          <span class="stat-label">is all it takes:<br />read, listen, reflect</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ FEATURES ══════════════════════ -->
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span lang="ar" dir="rtl">ميزات</span> · Features</p>
+          <h2>Everything you need to keep a daily habit</h2>
+          <p class="section-sub">No feed. No noise. One verse, presented the way it deserves, and the tools to understand it deeply.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-num" aria-hidden="true">01</span>
+            <span class="feature-icon"><i data-lucide="sunrise"></i></span>
+            <h3>A verse at dawn</h3>
+            <p>Pick your moment: Fajr, sunrise, or last thing at night. Your ayah arrives exactly when you want it, in a notification worth opening.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:.06s">
+            <span class="feature-num" aria-hidden="true">02</span>
+            <span class="feature-icon"><i data-lucide="languages"></i></span>
+            <h3>Understand it</h3>
+            <p>40+ translations side by side, with tafsir from Ibn Kathir, as-Sa‘di and more, one tap below every verse.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:.12s">
+            <span class="feature-num" aria-hidden="true">03</span>
+            <span class="feature-icon"><i data-lucide="audio-lines"></i></span>
+            <h3>Listen to it</h3>
+            <p>Every verse comes with recitation from renowned qaris. Slow it down, loop it, and let it settle.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:.18s">
+            <span class="feature-num" aria-hidden="true">04</span>
+            <span class="feature-icon"><i data-lucide="notebook-pen"></i></span>
+            <h3>Reflect on it</h3>
+            <p>A private journal beside every ayah. Write what it means to you today, and Ayah resurfaces it when the verse returns.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:.24s">
+            <span class="feature-num" aria-hidden="true">05</span>
+            <span class="feature-icon"><i data-lucide="smartphone"></i></span>
+            <h3>Widgets &amp; watch</h3>
+            <p>The verse lives on your home screen, lock screen, and wrist, beautiful in light and dark, always readable.</p>
+          </article>
+
+          <article class="feature-card reveal" style="--d:.3s">
+            <span class="feature-num" aria-hidden="true">06</span>
+            <span class="feature-icon"><i data-lucide="gift"></i></span>
+            <h3>Share it as art</h3>
+            <p>Turn the day’s ayah into a card worth sending: to family, to friends, to someone who needs it today.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ HOW IT WORKS ══════════════════════ -->
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span lang="ar" dir="rtl">كيف يعمل</span> · How it works</p>
+          <h2>Three quiet steps</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-medal" aria-hidden="true"><img src="logo.svg" alt=""></span>
+            <h3>Choose your time</h3>
+            <p>Pick when your day begins with the Quran. Change it whenever life changes.</p>
+          </li>
+          <li class="step reveal" style="--d:.1s">
+            <span class="step-medal" aria-hidden="true"><img src="logo.svg" alt=""></span>
+            <h3>Receive your ayah</h3>
+            <p>Each morning, one verse: chosen in sequence, never random, never repeated mid-journey.</p>
+          </li>
+          <li class="step reveal" style="--d:.2s">
+            <span class="step-medal" aria-hidden="true"><img src="logo.svg" alt=""></span>
+            <h3>Read · Listen · Reflect</h3>
+            <p>A minute of stillness: read the translation, hear the recitation, keep a thought.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ VERSE GALLERY ══════════════════════ -->
+    <section class="section" id="verses">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span lang="ar" dir="rtl">آيات</span> · From the app</p>
+          <h2>Verses you’ll wake up to</h2>
+          <p class="section-sub">Every card is typeset with the same care as a printed mushaf. Swipe through a few.</p>
+        </header>
+      </div>
+
+      <div class="gallery-wrap reveal">
+        <div class="container gallery-controls">
+          <button class="gallery-btn" id="galPrev" aria-label="Previous verse"><i data-lucide="arrow-left"></i></button>
+          <div class="gallery-dots" id="galDots" role="tablist" aria-label="Verse slides"></div>
+          <button class="gallery-btn" id="galNext" aria-label="Next verse"><i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <div class="gallery" id="gallery" tabindex="0" aria-label="Sample daily verse cards, scroll horizontally">
+          <article class="g-card">
+            <p class="g-verse" lang="ar" dir="rtl">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+            <p class="g-trans">“Indeed, with hardship comes ease.”</p>
+            <span class="g-ref">Ash-Sharh · 94:6</span>
+          </article>
+          <article class="g-card">
+            <p class="g-verse" lang="ar" dir="rtl">وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا</p>
+            <p class="g-trans">“Whoever is mindful of Allah, He will make a way out for him.”</p>
+            <span class="g-ref">At-Talaq · 65:2</span>
+          </article>
+          <article class="g-card">
+            <p class="g-verse" lang="ar" dir="rtl">إِنَّ اللَّهَ مَعَ الصَّابِرِينَ</p>
+            <p class="g-trans">“Indeed, Allah is with those who are patient.”</p>
+            <span class="g-ref">Al-Baqarah · 2:153</span>
+          </article>
+          <article class="g-card">
+            <p class="g-verse" lang="ar" dir="rtl">وَقُل رَّبِّ زِدْنِي عِلْمًا</p>
+            <p class="g-trans">“And say: My Lord, increase me in knowledge.”</p>
+            <span class="g-ref">Ta-Ha · 20:114</span>
+          </article>
+          <article class="g-card">
+            <p class="g-verse" lang="ar" dir="rtl">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</p>
+            <p class="g-trans">“Truly, in the remembrance of Allah do hearts find rest.”</p>
+            <span class="g-ref">Ar-Ra‘d · 13:28</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ REVIEWS ══════════════════════ -->
+    <section class="section section-alt" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span lang="ar" dir="rtl">شهادات</span> · Reviews</p>
+          <h2>Loved in every timezone</h2>
+        </header>
+
+        <div class="review-grid">
+          <figure class="review reveal">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <blockquote>“The first notification I open every day. It has quietly changed my mornings.”</blockquote>
+            <figcaption>Aisha · London</figcaption>
+          </figure>
+
+          <figure class="review reveal" style="--d:.08s">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <blockquote>“It replaced my pre-dawn scrolling with one minute of peace. The tafsir is the part I didn’t know I needed.”</blockquote>
+            <figcaption>Yusuf · Toronto</figcaption>
+          </figure>
+
+          <figure class="review reveal" style="--d:.16s">
+            <div class="review-stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <blockquote>“The typography alone is worth it. On my home screen widget it looks like a printed page.”</blockquote>
+            <figcaption>Mariam · Kuala Lumpur</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ FAQ ══════════════════════ -->
+    <section class="section" id="faq">
+      <div class="container faq-container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span lang="ar" dir="rtl">أسئلة</span> · FAQ</p>
+          <h2>Questions, answered</h2>
+        </header>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Is Ayah free?</span>
+              <i data-lucide="plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Yes. Every daily verse, translation, and recitation is free, forever. Ayah+ adds all 40+ translations, the full tafsir library, and premium widget themes for those who want more.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>When does the verse change?</span>
+              <i data-lucide="plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>At the time you choose. Most readers receive theirs at Fajr or first light; the next verse arrives 24 hours later. You can also browse ahead if you prefer.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Does it work offline?</span>
+              <i data-lucide="plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>Completely. Your verses, translations, and recitations are stored on your device, so the app works in the subway, on a flight, or anywhere else.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              <span>Do I need an account?</span>
+              <i data-lucide="plus" aria-hidden="true"></i>
+            </button>
+            <div class="faq-a">
+              <p>No. Ayah asks for nothing: no sign-up, no ads, no tracking. Your reflections are encrypted and never leave your device unless you choose to back them up.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ DOWNLOAD CTA ══════════════════════ -->
+    <section class="section download" id="download">
+      <div class="container">
+        <div class="download-panel reveal">
+          <div class="download-pattern" aria-hidden="true"></div>
+          <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <h2>Your verse is waiting<br />for tomorrow morning.</h2>
+          <p class="section-sub">Free · No account required · iOS &amp; Android</p>
+          <div class="hero-badges center">
+            <a class="store-badge solid" href="#" aria-label="Download on the App Store">
+              <svg viewBox="0 0 384 512" class="store-icon" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-badge solid" href="#" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 512 512" class="store-icon" aria-hidden="true"><path fill="currentColor" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 36.1v439.8c0 16.9 8.7 29.3 21.7 35.9l285.6-255.9L47 0zm380.9 217.1-58.2-33.4-65.7 72.3 65.7 72.3 58.9-33.8c26.5-15.2 26.5-62.3-.7-77.4zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+              <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ FOOTER ══════════════════════ -->
+    <footer class="site-footer">
+      <div class="footer-watermark" aria-hidden="true" lang="ar" dir="rtl">آية</div>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="brand">
+            <img src="logo.svg" alt="" class="brand-mark">
+            <span class="brand-word">Ayah</span>
+          </a>
+          <p>One ayah a day. A heart at rest.<br />May every verse reach you at the moment you need it.</p>
+        </div>
+        <nav class="footer-col" aria-label="Product">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#verses">Verse gallery</a>
+          <a href="#download">Download</a>
+        </nav>
+        <nav class="footer-col" aria-label="Support">
+          <h4>Support</h4>
+          <a href="#faq">FAQ</a>
+          <a href="#">Contact us</a>
+          <a href="#">Privacy</a>
+          <a href="ar/" lang="ar" dir="rtl">النسخة العربية</a>
+        </nav>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Ayah on Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Ayah on X"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="Ayah on YouTube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year">2026</span> Ayah. Made with care for the Quran.</span>
+        <span class="footer-dua" lang="ar" dir="rtl">وَقُل رَّبِّ زِدْنِي عِلْمًا</span>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>

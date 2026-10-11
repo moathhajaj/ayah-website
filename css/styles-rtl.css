@@ -1,0 +1,98 @@
+/* ═══════════════════════════════════════════════════════════════
+   AYAH - Arabic / RTL overrides (loaded only by ar/index.html)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Typography ────────────────────────────────────────────── */
+body {
+  font-family: "Tajawal", "Inter", sans-serif;
+}
+
+h1, h2, h3,
+.brand-word,
+.app-title,
+.stat-num,
+.faq-q {
+  font-family: var(--font-arabic-ui);
+}
+
+h1 {
+  font-size: clamp(2.3rem, 4.6vw, 3.7rem);
+  line-height: 1.6;
+}
+h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
+}
+h2, h3 { line-height: 1.45; }
+
+.review blockquote {
+  font-family: var(--font-arabic-ui);
+  font-style: normal;
+  line-height: 1.85;
+  font-size: 1.28rem;
+}
+
+.brand-word { font-size: 1.7rem; letter-spacing: 0; }
+
+.eyebrow [lang="ar"] { font-size: 1.1rem; }
+
+/* Arabic script must not be letter-spaced: it breaks the joining */
+.eyebrow,
+.verse-ref,
+.g-ref,
+.review figcaption,
+.app-kicker,
+.download-panel .section-sub {
+  letter-spacing: 0;
+}
+
+/* A vertical gold-foil gradient reads as gold across Arabic glyph
+   shapes regardless of reading direction. */
+.gold-text {
+  background: linear-gradient(180deg, var(--gold-300) 0%, var(--gold-500) 45%, #a8823f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ── Mirrored layout details ───────────────────────────────── */
+.hero .bismillah { text-align: right; }
+
+.hero-glow-a { right: auto; left: 4%; }
+.hero-glow-b { left: auto; right: -8%; }
+
+.phone { transform: rotateY(7deg) rotateX(2deg); }
+.hero-phone:hover .phone { transform: rotateY(0deg) rotateX(0deg); }
+
+.store-text { text-align: right; }
+
+.feature-num {
+  right: auto;
+  left: 26px;
+}
+
+.verse-brace.open { left: auto; right: 16px; }
+.verse-brace.close { right: auto; left: 16px; }
+
+.footer-watermark {
+  right: auto;
+  left: -30px;
+}
+
+.faq-q { text-align: right; }
+
+/* ── Arabic-first card composition ─────────────────────────── */
+/* The phone card and gallery cards show the verse without a
+   translation line, so the verse itself carries the space. */
+.verse-ar { font-size: 1.7rem; }
+
+.g-verse {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 26px;
+}
+
+/* Without a translation line, center the verse group in the card */
+.g-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 96px;
+}
