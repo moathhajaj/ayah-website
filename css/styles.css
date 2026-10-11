@@ -312,8 +312,6 @@ h3 { font-size: 1.35rem; font-weight: 600; }
 
 .orn-1 { width: 5.2rem; top: 16%; left: 6%; }
 .orn-2 { width: 3.4rem; top: 62%; left: 42%; }
-.orn-3 { font-size: 7rem; bottom: 8%; right: 34%; opacity: 0.05; }
-.orn-4 { font-size: 7rem; top: 9%; right: 30%; opacity: 0.05; }
 
 .hero-grid {
   position: relative;
@@ -1051,7 +1049,7 @@ h3 { font-size: 1.35rem; font-weight: 600; }
 
 @media (max-width: 480px) {
   .container { width: calc(100% - 40px); }
-  .orn-2, .orn-3 { display: none; }
+  .orn-2 { display: none; }
   .stat-num { font-size: 2rem; }
   .g-card { padding: 44px 24px 34px; }
 }
